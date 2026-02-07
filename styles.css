@@ -2090,3 +2090,36 @@ section {
         transition-duration: 0.01ms !important;
     }
 }
+
+/* Logo Styling */
+.logo-img {
+  height: 50px;
+  width: auto;
+  transition: all 0.3s ease;
+  filter: drop-shadow(0 0 10px rgba(0, 212, 255, 0.4));
+}
+
+.logo-img:hover {
+  filter: drop-shadow(0 0 20px rgba(0, 212, 255, 0.7));
+  transform: scale(1.05);
+}
+
+/* Hero Logo (for big display) */
+.hero-logo-img {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 0 30px rgba(0, 212, 255, 0.5));
+  animation: fadeInUp 1s ease;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
