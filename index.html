@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Quantum-Resistant Cyber Protocol - Next-generation cybersecurity protection against quantum computing threats">
+    <meta name="keywords" content="quantum security, cybersecurity, encryption, post-quantum cryptography">
+    <title>Quantum-Resistant Cyber Protocol | Next-Gen Security</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- ============================================
+         NAVIGATION HEADER
+         Sticky, responsive navigation with mobile hamburger menu
+    ============================================ -->
+    <header class="header" id="header">
+        <nav class="navbar">
+            <div class="nav-brand">
+                <a href="#home" class="logo">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>QuantumShield</span>
+                </a>
+            </div>
+            
+            <!-- Desktop Navigation -->
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#features" class="nav-link">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#how-it-works" class="nav-link">How It Works</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#technology" class="nav-link">Technology</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#pricing" class="nav-link">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            
+            <!-- CTA Button (Desktop) -->
+            <div class="nav-cta">
+                <a href="#contact" class="btn btn-primary">Get Started</a>
+            </div>
+            
+            <!-- Mobile Hamburger Menu -->
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ============================================
+         HERO SECTION
+         Animated background with particle network
+    ============================================ -->
+    <section class="hero" id="home">
+        <!-- Particle Canvas Background -->
+        <canvas id="particleCanvas" class="particle-canvas"></canvas>
+        
+        <!-- Gradient Overlay -->
+        <div class="hero-overlay"></div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-atom"></i>
+                    <span>Quantum-Ready Security</span>
+                </div>
+                
+                <h1 class="hero-title">
+                    <span class="gradient-text">Quantum-Resistant</span>
+                    <br>Cyber Protocol
+                </h1>
+                
+                <p class="hero-description">
+                    Protect your data against tomorrow's quantum threats with our 
+                    post-quantum cryptographic solutions. Future-proof your security infrastructure today.
+                </p>
+                
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="256">0</span>
+                        <span class="stat-suffix">-bit</span>
+                        <span class="stat-label">Encryption</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="99.9">0</span>
+                        <span class="stat-suffix">%</span>
+                        <span class="stat-label">Uptime</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="0">0</span>
+                        <span class="stat-label">Breaches</span>
+                    </div>
+                </div>
+                
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-primary btn-lg">
+                        <span>Start Free Trial</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#how-it-works" class="btn btn-outline btn-lg">
+                        <i class="fas fa-play-circle"></i>
+                        <span>Learn More</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scroll to explore</span>
+        </div>
+    </section>
+
+    <!-- ============================================
+         FEATURES SECTION
+         Service cards with hover effects
+    ============================================ -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Our Services</span>
+                <h2 class="section-title">Quantum-Ready Security Solutions</h2>
+                <p class="section-description">
+                    Comprehensive protection against both classical and quantum computing threats
+                </p>
+            </div>
+            
+            <div class="features-grid">
+                <!-- Feature Card 1 -->
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="feature-icon">
+                        <i class="fas fa-key"></i>
+                    </div>
+                    <h3 class="feature-title">Post-Quantum Encryption</h3>
+                    <p class="feature-description">
+                        Lattice-based cryptographic algorithms that remain secure even against quantum computer attacks.
+                    </p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> ML-KEM Key Encapsulation</li>
+                        <li><i class="fas fa-check"></i> ML-DSA Digital Signatures</li>
+                        <li><i class="fas fa-check"></i> NIST FIPS 203/204/205 Compliant</li>
+                    </ul>
+                    <a href="#contact" class="feature-link">
+                        Learn more <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <!-- Feature Card 2 -->
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3 class="feature-title">Secure Communications</h3>
+                    <p class="feature-description">
+                        End-to-end encrypted channels for data transmission with quantum key distribution support.
+                    </p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> Quantum Key Distribution (QKD)</li>
+                        <li><i class="fas fa-check"></i> Zero-Knowledge Protocols</li>
+                        <li><i class="fas fa-check"></i> Real-time Threat Detection</li>
+                    </ul>
+                    <a href="#contact" class="feature-link">
+                        Learn more <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <!-- Feature Card 3 -->
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <i class="fas fa-fingerprint"></i>
+                    </div>
+                    <h3 class="feature-title">Identity & Access</h3>
+                    <p class="feature-description">
+                        Quantum-resistant authentication and identity management for zero-trust architectures.
+                    </p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> Biometric Authentication</li>
+                        <li><i class="fas fa-check"></i> Multi-Factor Security</li>
+                        <li><i class="fas fa-check"></i> Hardware Security Modules</li>
+                    </ul>
+                    <a href="#contact" class="feature-link">
+                        Learn more <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <!-- Feature Card 4 -->
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3 class="feature-title">Data Protection</h3>
+                    <p class="feature-description">
+                        Comprehensive data encryption at rest and in transit with quantum-safe key management.
+                    </p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> AES-256-GCM Encryption</li>
+                        <li><i class="fas fa-check"></i> Automated Key Rotation</li>
+                        <li><i class="fas fa-check"></i> Hardware-Backed Storage</li>
+                    </ul>
+                    <a href="#contact" class="feature-link">
+                        Learn more <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         HOW IT WORKS SECTION
+         Step-by-step process
+    ============================================ -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Process</span>
+                <h2 class="section-title">How It Works</h2>
+                <p class="section-description">
+                    Simple integration process to quantum-proof your security infrastructure
+                </p>
+            </div>
+            
+            <div class="steps-container">
+                <!-- Step 1 -->
+                <div class="step-item">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <div class="step-icon">
+                            <i class="fas fa-clipboard-check"></i>
+                        </div>
+                        <h3 class="step-title">Security Assessment</h3>
+                        <p class="step-description">
+                            Our experts analyze your current infrastructure to identify vulnerabilities and create a customized migration plan.
+                        </p>
+                    </div>
+                    <div class="step-connector"></div>
+                </div>
+                
+                <!-- Step 2 -->
+                <div class="step-item">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <div class="step-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h3 class="step-title">Protocol Integration</h3>
+                        <p class="step-description">
+                            Seamlessly integrate our quantum-resistant protocols with your existing systems using our SDK and APIs.
+                        </p>
+                    </div>
+                    <div class="step-connector"></div>
+                </div>
+                
+                <!-- Step 3 -->
+                <div class="step-item">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <div class="step-icon">
+                            <i class="fas fa-shield-virus"></i>
+                        </div>
+                        <h3 class="step-title">Continuous Protection</h3>
+                        <p class="step-description">
+                            24/7 monitoring and automatic updates ensure your defenses evolve with emerging quantum threats.
+                        </p>
+                    </div>
+                    <div class="step-connector"></div>
+                </div>
+                
+                <!-- Step 4 -->
+                <div class="step-item">
+                    <div class="step-number">04</div>
+                    <div class="step-content">
+                        <div class="step-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 class="step-title">Compliance Reporting</h3>
+                        <p class="step-description">
+                            Generate detailed compliance reports for auditors with real-time security metrics and threat analysis.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         TECHNOLOGY SECTION
+         Explaining quantum resistance
+    ============================================ -->
+    <section class="technology" id="technology">
+        <div class="container">
+            <div class="tech-grid">
+                <!-- Left Column - Content -->
+                <div class="tech-content">
+                    <span class="section-tag">Technology</span>
+                    <h2 class="section-title">Why Quantum Resistance Matters</h2>
+                    <p class="tech-intro">
+                        Quantum computers will soon break today's encryption. Our post-quantum cryptography ensures your data remains secure.
+                    </p>
+                    
+                    <div class="tech-features">
+                        <div class="tech-feature">
+                            <div class="tech-feature-icon">
+                                <i class="fas fa-atom"></i>
+                            </div>
+                            <div class="tech-feature-text">
+                                <h4>Lattice-Based Cryptography</h4>
+                                <p>Mathematically proven security based on the hardness of lattice problems that even quantum computers cannot solve efficiently.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="tech-feature">
+                            <div class="tech-feature-icon">
+                                <i class="fas fa-random"></i>
+                            </div>
+                            <div class="tech-feature-text">
+                                <h4>Hash-Based Signatures</h4>
+                                <p>One-time signature schemes using cryptographic hash functions, providing information-theoretic security.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="tech-feature">
+                            <div class="tech-feature-icon">
+                                <i class="fas fa-code-branch"></i>
+                            </div>
+                            <div class="tech-feature-text">
+                                <h4>Code-Based Cryptography</h4>
+                                <p>Error-correcting code schemes that have withstood decades of cryptanalysis and quantum attacks.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="#contact" class="btn btn-primary">
+                        <span>Talk to Our Experts</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <!-- Right Column - Visual -->
+                <div class="tech-visual">
+                    <div class="tech-card">
+                        <div class="tech-card-header">
+                            <i class="fas fa-lock"></i>
+                            <span>Encryption Strength</span>
+                        </div>
+                        <div class="tech-comparison">
+                            <div class="comparison-item">
+                                <span class="comparison-label">RSA-2048</span>
+                                <div class="comparison-bar">
+                                    <div class="comparison-fill weak" style="width: 30%;"></div>
+                                </div>
+                                <span class="comparison-status vulnerable">Vulnerable</span>
+                            </div>
+                            <div class="comparison-item">
+                                <span class="comparison-label">ECC P-256</span>
+                                <div class="comparison-bar">
+                                    <div class="comparison-fill weak" style="width: 25%;"></div>
+                                </div>
+                                <span class="comparison-status vulnerable">Vulnerable</span>
+                            </div>
+                            <div class="comparison-item">
+                                <span class="comparison-label">ML-KEM-768</span>
+                                <div class="comparison-bar">
+                                    <div class="comparison-fill strong" style="width: 95%;"></div>
+                                </div>
+                                <span class="comparison-status secure">Quantum-Safe</span>
+                            </div>
+                            <div class="comparison-item">
+                                <span class="comparison-label">ML-DSA-65</span>
+                                <div class="comparison-bar">
+                                    <div class="comparison-fill strong" style="width: 90%;"></div>
+                                </div>
+                                <span class="comparison-status secure">Quantum-Safe</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Floating Elements -->
+                    <div class="floating-badge badge-1">
+                        <i class="fas fa-check-circle"></i>
+                        <span>NIST Approved</span>
+                    </div>
+                    <div class="floating-badge badge-2">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>FIPS 140-3</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         PRICING SECTION
+         Pricing plans
+    ============================================ -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Pricing</span>
+                <h2 class="section-title">Choose Your Protection Level</h2>
+                <p class="section-description">
+                    Flexible plans designed for organizations of all sizes
+                </p>
+            </div>
+            
+            <div class="pricing-grid">
+                <!-- Starter Plan -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 class="pricing-name">Starter</h3>
+                        <p class="pricing-description">For small teams getting started</p>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="currency">$</span>
+                        <span class="amount">499</span>
+                        <span class="period">/month</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Up to 50 users</li>
+                        <li><i class="fas fa-check"></i> Basic encryption protocols</li>
+                        <li><i class="fas fa-check"></i> Email support</li>
+                        <li><i class="fas fa-check"></i> Standard API access</li>
+                        <li><i class="fas fa-check"></i> Monthly security reports</li>
+                        <li class="disabled"><i class="fas fa-times"></i> Dedicated support</li>
+                        <li class="disabled"><i class="fas fa-times"></i> Custom integrations</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline btn-block">Get Started</a>
+                </div>
+                
+                <!-- Professional Plan (Featured) -->
+                <div class="pricing-card featured">
+                    <div class="pricing-badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3 class="pricing-name">Professional</h3>
+                        <p class="pricing-description">For growing organizations</p>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="currency">$</span>
+                        <span class="amount">1,499</span>
+                        <span class="period">/month</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Up to 500 users</li>
+                        <li><i class="fas fa-check"></i> Advanced PQC protocols</li>
+                        <li><i class="fas fa-check"></i> Priority support (24/7)</li>
+                        <li><i class="fas fa-check"></i> Full API access</li>
+                        <li><i class="fas fa-check"></i> Weekly security reports</li>
+                        <li><i class="fas fa-check"></i> Threat monitoring</li>
+                        <li class="disabled"><i class="fas fa-times"></i> Custom integrations</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary btn-block">Get Started</a>
+                </div>
+                
+                <!-- Enterprise Plan -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 class="pricing-name">Enterprise</h3>
+                        <p class="pricing-description">For large-scale deployments</p>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="currency">$</span>
+                        <span class="amount">4,999</span>
+                        <span class="period">/month</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Unlimited users</li>
+                        <li><i class="fas fa-check"></i> Full PQC suite</li>
+                        <li><i class="fas fa-check"></i> Dedicated support team</li>
+                        <li><i class="fas fa-check"></i> Enterprise API</li>
+                        <li><i class="fas fa-check"></i> Real-time dashboards</li>
+                        <li><i class="fas fa-check"></i> Advanced threat intel</li>
+                        <li><i class="fas fa-check"></i> Custom integrations</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline btn-block">Contact Sales</a>
+                </div>
+            </div>
+            
+            <!-- Enterprise CTA -->
+            <div class="pricing-cta">
+                <p>Need a custom solution? <a href="#contact">Contact our sales team</a> for tailored enterprise pricing.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         CONTACT/CTA SECTION
+         Contact form and call-to-action
+    ============================================ -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Left Column - Info -->
+                <div class="contact-info">
+                    <span class="section-tag">Get In Touch</span>
+                    <h2 class="section-title">Ready to Go Quantum-Safe?</h2>
+                    <p class="contact-description">
+                        Schedule a consultation with our security experts and discover how we can protect your organization against quantum threats.
+                    </p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <span class="contact-label">Email</span>
+                                <a href="mailto:security@quantumshield.io">security@quantumshield.io</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <span class="contact-label">Phone</span>
+                                <a href="tel:+1-800-QUANTUM">+1 (800) 782-6886</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <span class="contact-label">Headquarters</span>
+                                <span>350 Cyber Drive, Suite 1000<br>San Francisco, CA 94105</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Discord">
+                            <i class="fab fa-discord"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Right Column - Form -->
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name</label>
+                                <input type="text" id="firstName" name="firstName" placeholder="John" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name</label>
+                                <input type="text" id="lastName" name="lastName" placeholder="Doe" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Work Email</label>
+                            <input type="email" id="email" name="email" placeholder="john@company.com" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="company">Company</label>
+                            <input type="text" id="company" name="company" placeholder="Your Company">
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="companySize">Company Size</label>
+                                <select id="companySize" name="companySize">
+                                    <option value="">Select size</option>
+                                    <option value="1-50">1-50 employees</option>
+                                    <option value="51-200">51-200 employees</option>
+                                    <option value="201-1000">201-1000 employees</option>
+                                    <option value="1000+">1000+ employees</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="interest">I'm interested in</label>
+                                <select id="interest" name="interest">
+                                    <option value="">Select option</option>
+                                    <option value="demo">Product Demo</option>
+                                    <option value="trial">Free Trial</option>
+                                    <option value="consultation">Security Consultation</option>
+                                    <option value="enterprise">Enterprise Solution</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Tell us about your security needs..."></textarea>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                            <label for="newsletter">Subscribe to our security newsletter</label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-lg btn-block">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         FOOTER
+         Site footer with links and info
+    ============================================ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Brand Column -->
+                <div class="footer-brand">
+                    <a href="#home" class="footer-logo">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>QuantumShield</span>
+                    </a>
+                    <p class="footer-description">
+                        Next-generation cybersecurity protection against quantum computing threats.
+                    </p>
+                    <div class="footer-certifications">
+                        <span class="cert-badge">SOC 2</span>
+                        <span class="cert-badge">ISO 27001</span>
+                        <span class="cert-badge">FIPS 140-3</span>
+                    </div>
+                </div>
+                
+                <!-- Links Columns -->
+                <div class="footer-links">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#">API Documentation</a></li>
+                        <li><a href="#">SDK Downloads</a></li>
+                        <li><a href="#">Release Notes</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Press Kit</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Tutorials</a></li>
+                        <li><a href="#">Webinars</a></li>
+                        <li><a href="#">Whitepapers</a></li>
+                        <li><a href="#">Community</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Security</a></li>
+                        <li><a href="#">Compliance</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright">
+                    &copy; 2024 QuantumShield Inc. All rights reserved.
+                </p>
+                <p class="footer-note">
+                    <i class="fas fa-lock"></i>
+                    Protected by post-quantum cryptography
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification Container -->
+    <div id="toastContainer" class="toast-container"></div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
