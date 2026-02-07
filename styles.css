@@ -951,8 +951,17 @@ section {
    10. PRICING SECTION
 ============================================ */
 /* Pricing Section */
+/* ============================================
+   PRICING SECTION - FIXED
+   ============================================ */
+   /* ============================================
+   PRICING SECTION - FIXED
+   ============================================ */
+
 .pricing {
     padding: 6rem 0;
+    position: relative;
+    z-index: 1;
 }
 
 .pricing-grid {
@@ -961,6 +970,7 @@ section {
     gap: 2rem;
     max-width: 1000px;
     margin: 0 auto;
+    padding: 40px 20px;
 }
 
 .pricing-card {
@@ -969,32 +979,18 @@ section {
     border-radius: var(--radius-xl);
     padding: 2rem;
     position: relative;
+    z-index: 1;
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    cursor: pointer;
-    overflow: hidden;
-}
-
-.pricing-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(135deg, rgba(0, 212, 255, 0.1), transparent);
-    opacity: 0;
-    transition: opacity 0.4s ease;
-    z-index: 0;
 }
 
 .pricing-card:hover {
-    transform: translateY(-15px) scale(1.02);
+    transform: translateY(-20px) scale(1.03);
     border-color: var(--color-accent-primary);
-    box-shadow: 0 25px 50px rgba(0, 212, 255, 0.2), 0 0 30px rgba(0, 212, 255, 0.1);
-}
-
-.pricing-card:hover::before {
-    opacity: 1;
+    box-shadow: 
+        0 30px 60px rgba(0, 0, 0, 0.5),
+        0 0 40px rgba(0, 212, 255, 0.4),
+        0 0 80px rgba(0, 212, 255, 0.2);
+    z-index: 100;
 }
 
 .pricing-card.featured {
@@ -1005,8 +1001,8 @@ section {
 }
 
 .pricing-card.featured:hover {
-    transform: scale(1.08) translateY(-10px);
-    box-shadow: 0 30px 60px rgba(0, 212, 255, 0.3), 0 0 40px rgba(0, 212, 255, 0.2);
+    transform: scale(1.08) translateY(-15px);
+    z-index: 101;
 }
 
 .pricing-badge {
@@ -1020,23 +1016,12 @@ section {
     border-radius: 50px;
     font-size: 0.875rem;
     font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    box-shadow: 0 4px 15px rgba(0, 212, 255, 0.4);
     z-index: 10;
-    animation: pulse 2s infinite;
-}
-
-@keyframes pulse {
-    0%, 100% { transform: translateX(-50%) scale(1); }
-    50% { transform: translateX(-50%) scale(1.05); }
 }
 
 .pricing-header {
     text-align: center;
     margin-bottom: 1.5rem;
-    position: relative;
-    z-index: 1;
 }
 
 .pricing-name {
@@ -1050,14 +1035,12 @@ section {
 
 .pricing-description {
     color: var(--color-text-secondary);
-    font-size: 0.95rem;
+    font-size: 0.9rem;
 }
 
 .pricing-price {
     text-align: center;
     margin-bottom: 2rem;
-    position: relative;
-    z-index: 1;
 }
 
 .pricing-price .currency {
@@ -1083,8 +1066,6 @@ section {
 
 .pricing-features {
     margin-bottom: 2rem;
-    position: relative;
-    z-index: 1;
 }
 
 .pricing-features li {
@@ -1093,15 +1074,6 @@ section {
     gap: 0.75rem;
     padding: 0.75rem 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-    transition: all 0.3s ease;
-}
-
-.pricing-features li:hover {
-    background: rgba(0, 212, 255, 0.05);
-    margin: 0 -1rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    border-radius: var(--radius-md);
 }
 
 .pricing-features li:last-child {
@@ -1111,11 +1083,6 @@ section {
 .pricing-features i {
     color: var(--color-success);
     font-size: 0.875rem;
-    transition: transform 0.3s ease;
-}
-
-.pricing-features li:hover i {
-    transform: scale(1.2);
 }
 
 .pricing-features li.disabled {
@@ -1127,8 +1094,7 @@ section {
 }
 
 .pricing-card .btn {
-    position: relative;
-    z-index: 1;
+    width: 100%;
     transition: all 0.3s ease;
 }
 
@@ -1136,6 +1102,23 @@ section {
     transform: translateY(-3px);
     box-shadow: 0 10px 25px rgba(0, 212, 255, 0.3);
 }
+
+/* Responsive */
+@media (max-width: 768px) {
+    .pricing-grid {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+    }
+    
+    .pricing-card.featured {
+        transform: scale(1);
+    }
+    
+    .pricing-card.featured:hover {
+        transform: scale(1.03) translateY(-15px);
+    }
+}
+
 
 /* ============================================
    11. CONTACT SECTION

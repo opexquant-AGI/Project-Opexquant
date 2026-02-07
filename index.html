@@ -16,43 +16,41 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <!-- Custom Styles -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css?v=2">
 </head>
 <body>
     <!-- ============================================
          NAVIGATION HEADER
          Sticky, responsive navigation with mobile hamburger menu
     ============================================ -->
-    <header class="header" id="header">
-        <nav class="navbar">
-            <div class="nav-brand">
-                <a href="#home" class="logo">
-                    <i class="fas fa-shield-alt"></i>
-                    <span>Opex Quant</span.>
-                </a>
-            </div>
-            
-            <!-- Desktop Navigation -->
-            <ul class="nav-menu" id="navMenu">
-                <li class="nav-item">
-                    <a href="#home" class="nav-link active">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#features" class="nav-link">Features</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#how-it-works" class="nav-link">How It Works</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#technology" class="nav-link">Technology</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#pricing" class="nav-link">Pricing</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#contact" class="nav-link">Contact</a>
-                </li>
-            </ul>
+   <header class="header" id="header">
+    <nav class="navbar">
+        <div class="nav-brand">
+            <a href="#home" class="logo">
+                <img src="/logo/logo.svg" alt="Opex Quant" class="logo-img">
+            </a>
+        </div>
+        
+        <ul class="nav-menu" id="navMenu">
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#features" class="nav-link">Features</a></li>
+            <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
+            <li><a href="#technology" class="nav-link">Technology</a></li>
+            <li><a href="#pricing" class="nav-link">Pricing</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        
+        <div class="nav-cta">
+            <a href="#contact" class="btn btn-primary">Get Started</a>
+        </div>
+        
+        <div class="hamburger" id="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    
+
             
             <!-- CTA Button (Desktop) -->
             <div class="nav-cta">
@@ -73,6 +71,7 @@
          Animated background with particle network
     ============================================ -->
     <section class="hero" id="home">
+        
         <!-- Particle Canvas Background -->
         <canvas id="particleCanvas" class="particle-canvas"></canvas>
         
@@ -81,6 +80,9 @@
         
         <div class="container">
             <div class="hero-content">
+                <div class="hero-logo">
+    <img src="/logo/logo.svg" alt="Opex Quant" class="hero-logo-img">
+</div>
                 <div class="hero-badge">
                     <i class="fas fa-atom"></i>
                     <span>Opex Quant - Quantum-Ready Security</span>
